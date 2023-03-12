@@ -92,73 +92,7 @@ const navigation = {
     { name: "Stores", href: "#" },
   ],
 }
-const collections = [
-  {
-    name: "Women's",
-    href: "#",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-04-collection-01.jpg",
-    imageAlt: "Woman wearing a comfortable cotton t-shirt.",
-  },
-  {
-    name: "Men's",
-    href: "#",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-04-collection-02.jpg",
-    imageAlt: "Man wearing a comfortable and casual cotton t-shirt.",
-  },
-  {
-    name: "Desk Accessories",
-    href: "#",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-04-collection-03.jpg",
-    imageAlt:
-      "Person sitting at a wooden desk with paper note organizer, pencil and tablet.",
-  },
-]
-const trendingProducts = [
-  {
-    id: 1,
-    name: "Leather Long Wallet",
-    color: "Natural",
-    price: "$75",
-    href: "#",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-04-trending-product-02.jpg",
-    imageAlt: "Hand stitched, orange leather long wallet.",
-  },
-  // More products...
-]
-const perks = [
-  {
-    name: "Free returns",
-    imageUrl:
-      "https://tailwindui.com/img/ecommerce/icons/icon-returns-light.svg",
-    description:
-      "Not what you expected? Place it back in the parcel and attach the pre-paid postage stamp.",
-  },
-  {
-    name: "Same day delivery",
-    imageUrl:
-      "https://tailwindui.com/img/ecommerce/icons/icon-calendar-light.svg",
-    description:
-      "We offer a delivery service that has never been done before. Checkout today and receive your products within hours.",
-  },
-  {
-    name: "All year discount",
-    imageUrl:
-      "https://tailwindui.com/img/ecommerce/icons/icon-gift-card-light.svg",
-    description:
-      'Looking for a deal? You can use the code "ALLYEAR" at checkout and get money off all year round.',
-  },
-  {
-    name: "For the planet",
-    imageUrl:
-      "https://tailwindui.com/img/ecommerce/icons/icon-planet-light.svg",
-    description:
-      "We’ve pledged 1% of sales to the preservation and restoration of the natural environment.",
-  },
-]
+
 const footerNavigation = {
   products: [
     { name: "Bags", href: "#" },
@@ -361,50 +295,6 @@ export function Layout({ children }) {
       <header className="relative">
         <nav aria-label="Top">
           {/* Top navigation */}
-          <div className="bg-gray-900">
-            <div className="mx-auto flex h-10 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-              {/* Currency selector */}
-              <form>
-                <div>
-                  <label htmlFor="desktop-currency" className="sr-only">
-                    Currency
-                  </label>
-                  <div className="group relative -ml-2 rounded-md border-transparent bg-gray-900 focus-within:ring-2 focus-within:ring-white">
-                    <select
-                      id="desktop-currency"
-                      name="currency"
-                      className="flex items-center rounded-md border-transparent bg-gray-900 bg-none py-0.5 pl-2 pr-5 text-sm font-medium text-white focus:border-transparent focus:outline-none focus:ring-0 group-hover:text-gray-100"
-                    >
-                      {currencies.map((currency) => (
-                        <option key={currency}>{currency}</option>
-                      ))}
-                    </select>
-                    <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center">
-                      <ChevronDownIcon
-                        className="h-5 w-5 text-gray-300"
-                        aria-hidden="true"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </form>
-
-              <div className="flex items-center space-x-6">
-                <a
-                  href="#"
-                  className="text-sm font-medium text-white hover:text-gray-100"
-                >
-                  Sign in
-                </a>
-                <a
-                  href="#"
-                  className="text-sm font-medium text-white hover:text-gray-100"
-                >
-                  Create an account
-                </a>
-              </div>
-            </div>
-          </div>
 
           {/* Secondary navigation */}
           <div className="bg-white">
